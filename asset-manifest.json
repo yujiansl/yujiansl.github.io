@@ -1,0 +1,20 @@
+{
+  "/umi.css": "/static/css/umi.css",
+  "/umi.js": "/static/js/umi.js",
+  "/static/css/1.chunk.css": "/static/css/1.chunk.css",
+  "/static/js/1.chunk.js": "/static/js/1.chunk.js",
+  "/vendors.js": "/static/js/vendors.chunk.js",
+  "/static/css/3.chunk.css": "/static/css/3.chunk.css",
+  "/static/js/3.chunk.js": "/static/js/3.chunk.js",
+  "/static/css/4.chunk.css": "/static/css/4.chunk.css",
+  "/static/js/4.chunk.js": "/static/js/4.chunk.js",
+  "/public/captcha-tianai.png": "/captcha-tianai.png",
+  "/public/favicon.ico": "/favicon.ico",
+  "/public/icon.svg": "/icon.svg",
+  "/index.html": "/index.html",
+  "/public/logo.svg": "/logo.svg",
+  "/static/images/arrow.svg": "/static/images/arrow.svg",
+  "/static/images/erc.svg": "/static/images/erc.svg",
+  "/static/images/lang.svg": "/static/images/lang.svg",
+  "/static/images/trc.svg": "/static/images/trc.svg"
+}
