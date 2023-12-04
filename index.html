@@ -1,22 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="/static/css/umi.css" />
-    <script>
-      window.routerBase = "/";
-    </script>
-    <script>
-      //! umi version: 3.5.41
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>전자지갑 (E-Wallet)</title>
+    <link rel="icon" href="/common/img/logo.png">
+    <link rel="stylesheet" href="common/css/index.css">
+    <script src="./common/js/jquery3.5.1.min.js"></script>
+</head>
+<body>
 
-    <script src="/static/js/umi.js"></script>
-  </body>
+<div class="content">
+    <h1 class="title">전자지갑 (E-Wallet)</h1>
+    <div class="item selected">
+        <img class="logo" src="./common/img/toss.png" alt="Toss">
+        <div class="logo-title">Toss</div>
+        <img class="select-img " src="./common/img/unselect.svg" alt="unselect">
+        <img class="select-img " src="./common/img/selected.svg" alt="selected">
+    </div>
+    <div class="item ">
+        <img class="logo" src="./common/img/ssg.png" alt="SSG pay">
+        <div class="logo-title">SSG pay</div>
+        <img class="select-img " src="./common/img/unselect.svg" alt="unselect">
+        <img class="select-img" src="./common/img/selected.svg" alt="selected">
+    </div>
+    <div class="item">
+        <img class="logo" src="./common/img/samsung.png" alt="Samsung Pay">
+        <div class="logo-title">Samsung Pay</div>
+        <img class="select-img " src="./common/img/unselect.svg" alt="unselect">
+        <img class="select-img" src="./common/img/selected.svg" alt="selected">
+    </div>
+
+    <div class="btn">OK</div>
+</div>
+
+
+<script type="text/javascript">
+    const formatURLParams = () => {
+        const url = window.location.href
+        const params = {}
+        // 将字符串以'?'为分隔符切割成两部分
+        const parts = url.split('?')
+        if (parts.length === 2) {
+            // 将第二部分以'&'为分隔符切割成多个参数
+            const queries = parts[1].split('&')
+            for (let i = 0; i < queries.length; i++) {
+                // 将每个参数以'='为分隔符切割成键值对
+                const [key, value] = queries[i].split('=')
+                // 将键值对存入对象中
+                params[key] = value ? decodeURIComponent(value) : ''
+            }
+        }
+        return params
+    }
+    window.onload = function () {
+        const query = formatURLParams()
+        let loading = false
+        $('.item').click(function () {
+            $('.item').removeClass('selected')
+            $(this).addClass('selected')
+        })
+
+        $('.btn').click(function () {
+            console.log(query, 'query')
+            if (loading) return
+            let req = {
+                'tempOrder': query.temp_order,
+                'currency': query.currency,
+                'amount': query.amount,
+                'expireAfter': query.expire_after,
+                'sign': query.sign,
+                createdAt: query.created_at
+            }
+            loading = true
+            $.ajax({
+                type: 'POST',
+                url: '',
+                data: req,
+                success: function (data) {
+                    console.log(data, 'data')
+                },
+                complete: function () {
+                    loading = false
+                }
+            })
+        })
+    }
+</script>
+</body>
 </html>
