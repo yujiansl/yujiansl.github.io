@@ -1,0 +1,1 @@
+import{f as t}from"./index-bEAPwbJM.js";import{r as s,b as n}from"./vue-BtEXIrqH.js";const r=s(""),o=t();n(()=>o.roles,e=>{r.value=e.includes("merchant")?"merchant":e.includes("agent")?"agent":e.includes("admin")?"admin":""},{immediate:!0});function i(){return{role:r}}export{i as u};
