@@ -1,0 +1,1 @@
+import{i as e}from"./index-Cfrc5ih1.js";function s(t){return e({url:"/settings/settlementaccount/create",method:"post",data:t})}function c(t){return e({url:"/settings/settlementaccount/delete",method:"post",data:t})}function o(t){return e({url:"/settings/settlementaccount/list",method:"post",data:t})}export{s as c,c as d,o as g};
