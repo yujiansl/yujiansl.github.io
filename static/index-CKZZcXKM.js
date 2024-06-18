@@ -1,0 +1,1 @@
+import{P as i}from"./index-c78MVIZI.js";function s(t){return i({url:"/settlementwithdraw/submit",method:"post",data:t})}function n(t,e){return i({url:"/settlementwithdraw/list?dataId="+e,method:"post",data:t})}function d(t,e){return i({url:"/settlementwithdraw/edit?id="+e,method:"post",data:t})}export{n as a,d as b,s};

@@ -1,0 +1,1 @@
+const e=t=>/^(https?:|mailto:|tel:)/.test(t),r=t=>/^[A-Za-z0-9+\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(t),a=t=>/^[0-9a-zA-Z!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]{6,30}$/.test(t);export{r as a,a as b,e as i};

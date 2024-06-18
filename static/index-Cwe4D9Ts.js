@@ -1,0 +1,1 @@
+import{P as e}from"./index-c78MVIZI.js";function s(t){return e({url:"/settings/settlementaccount/create",method:"post",data:t})}function c(t){return e({url:"/settings/settlementaccount/delete",method:"post",data:t})}function o(t){return e({url:"/settings/settlementaccount/list",method:"post",data:t})}export{s as c,c as d,o as g};
