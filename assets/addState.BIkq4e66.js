@@ -1,0 +1,1 @@
+const l=[{label:"是",value:1},{label:"否",value:0}],a=[{label:"未知",value:2},{label:"男",value:0},{label:"女",value:1}],e=[{label:"是",value:1},{label:"否",value:0}],b=[{label:"全部",val:""},{label:"待联系",val:0},{label:"跟进中",val:1},{label:"已成单",val:3},{label:"战败",val:4},{label:"已无效",val:5}];export{l as a,e as b,b as f,a as s};

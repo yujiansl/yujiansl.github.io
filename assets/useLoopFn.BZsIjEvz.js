@@ -1,0 +1,1 @@
+const t=""+new URL("msg-1-DJKO7Fdw.png",import.meta.url).href;function a(t,a){const{delay:e=1e3,immediate:n=!0}=a||{};let l=null,i=!1;const s=async()=>{if(!i)try{await t()}finally{l=setTimeout((()=>{s()}),e)}},c=async()=>{i=!1,await s()};return n&&c(),{start:c,cancel:()=>{i=!0,l&&(clearTimeout(l),l=null)}}}export{t as M,a as u};

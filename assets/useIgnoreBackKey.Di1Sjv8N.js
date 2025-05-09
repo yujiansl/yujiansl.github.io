@@ -1,0 +1,1 @@
+import{b1 as a,r as e,E as s,U as n,b6 as o,aR as r}from"./index-CK4DGatK.js";function i(){if(a)return;const i=e(!1);s((()=>{n.onReady((()=>{n.ignoreBackKey(!0),i.value=!0}))}));const t=()=>{i.value&&n.ignoreBackKey(!1)};o((()=>{t()})),r((()=>{t()}))}export{i as u};

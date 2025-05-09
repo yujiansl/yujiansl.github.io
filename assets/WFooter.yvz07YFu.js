@@ -1,0 +1,1 @@
+import{_ as s,b as o,o as a,k as t,j as d}from"./index-CK4DGatK.js";const e=s({},[["render",function(s,e){return a(),o("div",{class:"w-footer"},[t("div",{class:"footer-box"},[d(s.$slots,"default",{},void 0,!0)])])}],["__scopeId","data-v-12dc8a49"]]);export{e as W};

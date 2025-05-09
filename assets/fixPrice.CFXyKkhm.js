@@ -1,0 +1,1 @@
+var a=(a=>(a[a["评估定价"]=4]="评估定价",a[a["销售定价"]=5]="销售定价",a))(a||{}),e=(a=>(a["待定价"]="awaitRater",a["已定价"]="completedRater",a["已采购"]="hasPurchased",a["战败"]="lose",a["销售定价-待定价"]="awaitSell",a["销售定价-已定价"]="completedSell",a))(e||{});export{a as F,e as a};

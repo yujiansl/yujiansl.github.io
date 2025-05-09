@@ -1,0 +1,1 @@
+import{u as e}from"./index.DEPEwlq9.js";import{a9 as o}from"./index-CK4DGatK.js";const s="SELL_PARAMS",r="IS_SELL";function a(){const a=e(s,{}),n=e(r,"");return o({clear:()=>{a.value={},n.value="",window.sessionStorage.removeItem(s),window.sessionStorage.removeItem(r)},sellParams:a,isSell:n})}export{a as u};

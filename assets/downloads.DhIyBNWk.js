@@ -1,0 +1,1 @@
+import"./index-CK4DGatK.js";const e=(e,t)=>{const d=document.createElement("a");d.style.display="none",d.href=e;const n=t||e.substring(e.lastIndexOf("/")+1);d.setAttribute("download",n),document.body.appendChild(d),d.click(),document.body.removeChild(d)};export{e as d};

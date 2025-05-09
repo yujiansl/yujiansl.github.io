@@ -1,0 +1,1 @@
+function r(r,n=","){return r&&r.length?Array.isArray(r)?r.join(n):r:""}function n(r,n=","){return r?Array.isArray(r)?r:r.split(n):[]}function a(r){return r&&Array.isArray(r)?r[0]:r}export{r as a,a as g,n as s};

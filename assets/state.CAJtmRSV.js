@@ -1,0 +1,1 @@
+const e={notice:"sysInfo",carSeek:"carSeek",adjustPrice:"adjustPrice",customerOrder:"customerOrder",purchase:"purchase",sell:"sell",carSell:"carSell",renewal:"renewal"},r={notice:"通知公告",carSeek:"车辆消息",adjustPrice:"车辆调价",customerOrder:"销售订单",purchase:"采购订单",sell:"车辆出售",carSell:"资料待办",renewal:"更新通知"};export{e as d,r as t};
